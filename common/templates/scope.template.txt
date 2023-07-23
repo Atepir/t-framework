@@ -1,0 +1,23 @@
+const { DEFAULT_CONSTANTS } = require("../../../constants/default-constants");
+
+module.exports = {
+    _UNAME: {
+        name: "NAME",
+        url: URL,
+        endpoints: [
+            {
+                name: '',
+                url: URL,
+                method: 'GET',
+                params: [
+                ],
+            },
+        ],
+        constants: {
+            ...DEFAULT_CONSTANTS,
+        },
+        selectors: {
+            
+        },
+    }
+};

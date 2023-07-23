@@ -1,0 +1,33 @@
+const { CONSTANTS } = require('../../../constants/default-constants');
+const { _UNAME } = require('../../scopes/NAME');
+const selectionHelper = require('../../../common/helpers/dom-selector.helper');
+const dotenv = require('dotenv').config();
+
+describe('NAME', () => {
+  let page;
+  const UNAME = _UNAME;
+  const Select = new selectionHelper.DomSelector(UNAME.selectors);
+  const SENSIBLE = process.env;
+
+  beforeAll(async () => {
+    page = await global.__BROWSER__.newPage();
+    await page.setExtraHTTPHeaders({
+      'Accept-Language': UNAME.constants.BROWSER_LANGUAGE,
+    });
+    await page.goto(UNAME.url);
+  }, CONSTANTS.TIMEOUT);
+
+
+  afterAll(async () => {
+    await page.close()
+  }, CONSTANTS.TIMEOUT);
+
+
+  it('should load without error', async () => {
+    let text = await page.evaluate(() => document.body.textContent);
+    expect(text).toContain(UNAME.name);
+  }, CONSTANTS.TIMEOUT);
+
+  // TI-FRAMEWORK: EOF
+  // ! IT IS IMPORTANT NOT TO MODIFY THE PREVIOUS LINE FOR TI CLI TO WORK
+});
