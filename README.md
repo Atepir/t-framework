@@ -1,6 +1,6 @@
-<div style="text-align: center;">
+<div class="center">
     <h1> Ti Framework </h1>
-    <h2> A powerful and easy to use UI testing framework </h2>
+    <strong> Seamless toolbox for e2e chromium based tests </strong>
 </div>
 
 ## Getting Started
