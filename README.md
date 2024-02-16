@@ -1,4 +1,7 @@
-# UI Testing Framework Starter
+<div style="text-align: center;">
+    <h1> Ti Framework </h1>
+    <h2> A powerful and easy to use UI testing framework </h2>
+</div>
 
 ## Getting Started
 ---
@@ -78,24 +81,9 @@ By those points, Ti-Framework stands out.
 - Asynchronous tests in navigator
 - Ease to add new templates of various depth level and features
 
-## What next ?
----
-In order to ease even more the process:
-- Many more capabilities can be added to CLI.
-- Templates of any kind can be added and the option to choose one when generating a test suite with CLI.
-- More helpers can be added.
-
-## Additional and important notes
+## Additional notes
 ---
 - Only the DomSelector API is intented for global usage.
 - Default Constants are not intended for core usage.
 - Logger is not intended for global usage. Use console logging instead.
 - [.env](.env) is supposed to be used for core configuration. If you want for instance to `set the brower visible or not`. You can also set there some `SENSIBLE` values like `usernames` or `passwords` that can be accessed by the framework using dotenv process.
-
-## Disclaimers
----
-- (1) I got working on this only a few hours due to my schechule. I can update it later on demand.
-
----
-Thanks & Regards,
-Nongma SORGHO (@atepir)
