@@ -29,7 +29,6 @@ To see help on Ti CLI, please run:
 ```shell
 ti --help
 ```
-Detailed CLI usage has been shown in the [Validation Video](../VALIDATION.md).
 
 ## Code coverage and Javascript frameworks
 ---
